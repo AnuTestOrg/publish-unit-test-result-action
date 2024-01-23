@@ -205,7 +205,7 @@ jobs:
           dockerfile: ./Dockerfile
           annotations: true
       - name: Upload SARIF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: SARIF
           path: ${{ steps.scan.outputs.sarif }}
