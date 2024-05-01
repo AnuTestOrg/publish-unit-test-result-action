@@ -37,14 +37,14 @@ jobs:
           echo '{"subject": "Docker pulls", "status": "${{ steps.downloads.outputs.total_downloads }} (${{ steps.downloads.outputs.recent_downloads_per_day }}/day)", "color": "blue"}' > downloads.json
 
       - name: Upload badge to Gist
-        uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        uses: andymckay/append-gist-action@ab30bf28df67017c7ad696500b218558c7c04db3
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gistURL: https://gist.githubusercontent.com/EnricoMi/612cb538c14731f1a8fefe504f519395
           file: downloads.svg
 
       - name: Upload JSON to Gist
-        uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        uses: andymckay/append-gist-action@ab30bf28df67017c7ad696500b218558c7c04db3
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gistURL: https://gist.githubusercontent.com/EnricoMi/612cb538c14731f1a8fefe504f519395
@@ -77,14 +77,14 @@ jobs:
           echo '{"subject": "GitHub Workflows", "status": "${{ steps.workflows.outputs.total_workflows }}", "color": "blue"}' > workflows.json
 
       - name: Upload badge to Gist
-        uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        uses: andymckay/append-gist-action@ab30bf28df67017c7ad696500b218558c7c04db3
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gistURL: https://gist.githubusercontent.com/EnricoMi/612cb538c14731f1a8fefe504f519395
           file: workflows.svg
 
       - name: Upload JSON to Gist
-        uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        uses: andymckay/append-gist-action@ab30bf28df67017c7ad696500b218558c7c04db3
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gistURL: https://gist.githubusercontent.com/EnricoMi/612cb538c14731f1a8fefe504f519395
